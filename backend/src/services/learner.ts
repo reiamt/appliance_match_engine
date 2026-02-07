@@ -148,7 +148,7 @@ export async function saveDevices() {
 // read cached json files (when llm calls are disabled)
 export function readCachedExtraction() {
     const data = JSON.parse(
-        readFileSync("../data/extraction_node_output.json", "utf-8")
+        readFileSync("../backend/src/data/extraction_node_output.json", "utf-8")
     );
     extractedDeviceCache = { "devices": data };
     return data;
@@ -156,7 +156,7 @@ export function readCachedExtraction() {
 
 export function readCachedMatching() {
     const data = JSON.parse(
-        readFileSync("../data/matcher_node_output.json", "utf-8")
+        readFileSync("../backend/src/data/matcher_node_output.json", "utf-8")
     );
     extractedDeviceCache = { devices: data };
     return data
