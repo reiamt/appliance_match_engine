@@ -1,0 +1,8 @@
+{
+    "name": "appliance_match_engine",
+    "private": true,
+    "workspaces": [
+        "backend",
+        "frontend"
+    ]
+}
