@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config({ path: "../../.env"});
+dotenv.config({ path: "../.env"});
 
 import { GoogleGenAI, Type } from "@google/genai";
 import { readFileSync } from "fs";
@@ -43,7 +43,7 @@ const MATCHER_PROMPT = `
 
 // load device catalog
 const geraeteList = JSON.parse(
-    readFileSync("../data/metadata_geraete_list.json", "utf-8")
+    readFileSync("src/data/metadata_geraete_list.json", "utf-8")
 );
 
 // response schema for gemini structured output
