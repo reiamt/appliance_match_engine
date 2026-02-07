@@ -14,3 +14,5 @@ export const devices = pgTable("devices", {
     marge: real("marge"),
     created_at: timestamp("created_at").defaultNow(),
 });
+
+export type DeviceRow = typeof devices.$inferSelect;
