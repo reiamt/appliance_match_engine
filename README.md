@@ -107,7 +107,7 @@ Session-based REST API supporting the interrupt/resume pattern:
 
 ```bash
 # Clone and install
-git clone <repo-url>
+git clone https://github.com/reiamt/appliance_match_engine
 cd appliance_match_engine
 npm install
 
